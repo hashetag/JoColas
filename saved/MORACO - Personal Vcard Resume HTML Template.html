@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://elmanawy.info/demo/moraco/layout1/ -->
+<html lang="en" class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .transit-container{background-color:white;max-width:265px;overflow-x:hidden}.gm-style .transit-container .transit-title span{font-size:14px;font-weight:500}.gm-style .transit-container .transit-title{padding-bottom:6px}.gm-style .transit-container .transit-wheelchair-icon{background:transparent url('https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png');background-size:59px 492px;display:inline-block;background-position:-5px -450px;width:13px;height:13px}.gm-style.gm-china .transit-container .transit-wheelchair-icon{background-image:url('http://maps.gstatic.cn/mapfiles/api-3/images/mapcnt6.png')}@media (-webkit-min-device-pixel-ratio:1.2),(min-resolution:1.2dppx),(min-resolution:116dpi){.gm-style .transit-container .transit-wheelchair-icon{background-image:url('https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6_hdpi.png');background-size:59px 492px;display:inline-block;background-position:-5px -449px;width:13px;height:13px}.gm-style.gm-china .transit-container .transit-wheelchair-icon{background-image:url('http://maps.gstatic.cn/mapfiles/api-3/images/mapcnt6_hdpi.png')}}.gm-style .transit-container div{background-color:white;font-size:11px;font-weight:300;line-height:15px}.gm-style .transit-container .transit-line-group{overflow:hidden;margin-right:-6px}.gm-style .transit-container .transit-line-group-separator{border-top:1px solid #e6e6e6;padding-top:5px}.gm-style .transit-container .transit-nlines-more-msg{color:#999;margin-top:-3px;padding-bottom:6px}.gm-style .transit-container .transit-line-group-vehicle-icons{display:inline-block;padding-right:10px;vertical-align:top;margin-top:1px}.gm-style .transit-container .transit-line-group-content{display:inline-block;min-width:100px;max-width:228px;margin-bottom:-3px}.gm-style .transit-container .transit-clear-lines{clear:both}.gm-style .transit-container .transit-div-line-name{float:left;padding:0 6px 6px 0;white-space:nowrap}.gm-style .transit-container .transit-div-line-name .gm-transit-long{width:107px}.gm-style .transit-container .transit-div-line-name .gm-transit-medium{width:50px}.gm-style .transit-container .transit-div-line-name .gm-transit-short{width:37px}.gm-style .transit-div-line-name .renderable-component-icon{float:left;margin-right:2px}.gm-style .transit-div-line-name .renderable-component-color-box{background-image:url(https://maps.gstatic.com/mapfiles/transparent.png);height:10px;width:4px;float:left;margin-top:3px;margin-right:3px;margin-left:1px}.gm-style.gm-china .transit-div-line-name .renderable-component-color-box{background-image:url(http://maps.gstatic.cn/mapfiles/transparent.png)}.gm-style .transit-div-line-name .renderable-component-text{text-align:left;overflow:hidden;text-overflow:ellipsis;display:block}.gm-style .transit-div-line-name .renderable-component-text-box{overflow:hidden;text-overflow:ellipsis;display:block;font-size:8pt;font-weight:400;text-align:center;padding:1px 2px}.gm-style .transit-div-line-name .renderable-component-text-box-white{border:solid 1px #ccc;background-color:white;padding:0 2px}.gm-style .transit-div-line-name .renderable-component-bold{font-weight:400}
+</style><style>.poi-info-window div,.poi-info-window a{color:#333;font-family:Roboto,Arial;font-size:13px;background-color:white;-moz-user-select:text;-webkit-user-select:text;-ms-user-select:text;user-select:text}.poi-info-window{cursor:default}.poi-info-window a:link{text-decoration:none;color:#427fed}.poi-info-window .view-link,.poi-info-window a:visited{color:#427fed}.poi-info-window .view-link:hover,.poi-info-window a:hover{cursor:pointer;text-decoration:underline}.poi-info-window .full-width{width:180px}.poi-info-window .title{overflow:hidden;font-weight:500;font-size:14px}.poi-info-window .address{margin-top:2px;color:#555}
+</style><style>.gm-style .gm-style-iw{font-weight:300;font-size:13px;overflow:hidden}.gm-style .gm-style-iw-a{position:absolute;width:9999px;height:0}.gm-style .gm-style-iw-t{position:absolute;width:100%}.gm-style .gm-style-iw-t::after{background:linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);box-shadow:-2px 2px 2px 0 rgba(178,178,178,.4);content:"";height:15px;left:0;position:absolute;top:0;transform:translate(-50%,-50%) rotate(-45deg);width:15px}.gm-style .gm-style-iw-c{position:absolute;box-sizing:border-box;overflow:hidden;top:0;left:0;transform:translate(-50%,-100%);background-color:white;border-radius:8px;padding:12px;box-shadow:0 2px 7px 1px rgba(0,0,0,0.3)}.gm-style .gm-style-iw-d{box-sizing:border-box;overflow:auto}.gm-style .gm-style-iw-d::-webkit-scrollbar{width:18px;height:12px;-webkit-appearance:none}.gm-style .gm-style-iw-d::-webkit-scrollbar-track,.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece{background:#fff}.gm-style .gm-style-iw-c .gm-style-iw-d::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.12);border:6px solid transparent;border-radius:9px;background-clip:content-box}.gm-style .gm-style-iw-c .gm-style-iw-d::-webkit-scrollbar-thumb:horizontal{border:3px solid transparent}.gm-style .gm-style-iw-c .gm-style-iw-d::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.3)}.gm-style .gm-style-iw-c .gm-style-iw-d::-webkit-scrollbar-corner{background:transparent}.gm-style .gm-iw{color:#2c2c2c}.gm-style .gm-iw b{font-weight:400}.gm-style .gm-iw a:link,.gm-style .gm-iw a:visited{color:#4272db;text-decoration:none}.gm-style .gm-iw a:hover{color:#4272db;text-decoration:underline}.gm-style .gm-iw .gm-title{font-weight:400;margin-bottom:1px}.gm-style .gm-iw .gm-basicinfo{line-height:18px;padding-bottom:12px}.gm-style .gm-iw .gm-website{padding-top:6px}.gm-style .gm-iw .gm-photos{padding-bottom:8px;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.gm-style .gm-iw .gm-sv,.gm-style .gm-iw .gm-ph{cursor:pointer;height:50px;width:100px;position:relative;overflow:hidden}.gm-style .gm-iw .gm-sv{padding-right:4px}.gm-style .gm-iw .gm-wsv{cursor:pointer;position:relative;overflow:hidden}.gm-style .gm-iw .gm-sv-label,.gm-style .gm-iw .gm-ph-label{cursor:pointer;position:absolute;bottom:6px;color:#fff;font-weight:400;text-shadow:rgba(0,0,0,0.7) 0 1px 4px;font-size:12px}.gm-style .gm-iw .gm-stars-b,.gm-style .gm-iw .gm-stars-f{height:13px;font-size:0}.gm-style .gm-iw .gm-stars-b{position:relative;background-position:0 0;width:65px;top:3px;margin:0 5px}.gm-style .gm-iw .gm-rev{line-height:20px;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.gm-style.gm-china .gm-iw .gm-rev{display:none}.gm-style .gm-iw .gm-numeric-rev{font-size:16px;color:#dd4b39;font-weight:400}.gm-style .gm-iw.gm-transit{margin-left:15px}.gm-style .gm-iw.gm-transit td{vertical-align:top}.gm-style .gm-iw.gm-transit .gm-time{white-space:nowrap;color:#676767;font-weight:bold}.gm-style .gm-iw.gm-transit img{width:15px;height:15px;margin:1px 5px 0 -20px;float:left}
+</style><style>.gm-iw {text-align:left;}.gm-iw .gm-numeric-rev {float:left;}.gm-iw .gm-photos,.gm-iw .gm-rev {direction:ltr;}.gm-iw .gm-stars-f, .gm-iw .gm-stars-b {background:url("https://maps.gstatic.com/mapfiles/api-3/images/review_stars.png") no-repeat;background-size: 65px 26px;float:left;}.gm-iw .gm-stars-f {background-position:left -13px;}.gm-iw .gm-sv-label,.gm-iw .gm-ph-label {left: 4px;}</style><link type="text/css" rel="stylesheet" href="./MORACO - Personal Vcard Resume HTML Template_files/css"><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="https://elmanawy.info/demo/moraco/layout1/assets/images/favicon.png">
+
+        <!-- SEO 
+          ================================================== -->
+        <title>MORACO - Personal Vcard Resume HTML Template</title>
+        <meta name="author" content="Marwa El-Manawy &lt;marwa@elmanawy.info&gt;">
+        <meta name="description" content="Welcome to the Marwa El-Manawy home page, entry point to information about innovative Marwa El-Manawy products and projects, business solutions and business consulting services">
+        <meta name="Keywords" content="Elmanawt, Marwa El-Manawy, Web Design, Web Development,IT infrastructure,business solutions,business consulting services,innovation,servers,storage solutions,software, outsourcing,web design,web development,software development,software company,social media,marketing,automation, مروة المناوي">
+
+        <!-- CSS Files
+          ================================================== -->
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/font-awesome.min.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/animate.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/owl.carousel.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/jquery.fancybox.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/style.css" rel="stylesheet">
+        <link href="./MORACO - Personal Vcard Resume HTML Template_files/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="./MORACO - Personal Vcard Resume HTML Template_files/main.css" id="colors">
+    <style type="text/css">.fancybox-margin{margin-right:5px;}</style><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/map.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/marker.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/infowindow.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./MORACO - Personal Vcard Resume HTML Template_files/controls.js.download"></script></head>
+
+    <body cz-shortcut-listen="true">
+        <div id="loading" style="display: none;">
+            <img src="./MORACO - Personal Vcard Resume HTML Template_files/loading.gif" alt="loading">
+        </div>
+        <div class="responsive-menu"><a href="https://elmanawy.info/demo/moraco/layout1/index.html"> <b>MORACO</b></a> <a id="menu-icon" class="but" href="https://elmanawy.info/demo/moraco/layout1/#"><span class="ti-menu"><img src="./MORACO - Personal Vcard Resume HTML Template_files/menu.png" alt="image"></span> </a></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- START LEFT SIDE -->
+                <div class="col-sm-3 col-md-2 sidebar" style="margin-left: 0px;">
+                    <div class="logo">
+                        <a href="https://elmanawy.info/demo/moraco/layout1/index.html"><img src="./MORACO - Personal Vcard Resume HTML Template_files/logo.png" alt="logo"></a>
+                    </div>
+                    <ul class="nav nav-sidebar" id="navbar">
+                        <li class="active"><a href="https://elmanawy.info/demo/moraco/layout1/#home" class="page-scroll">Home <span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="https://elmanawy.info/demo/moraco/layout1/#about" class="page-scroll">About</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#skills" class="page-scroll">Skills</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#resumes" class="page-scroll">Resumes</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#services" class="page-scroll">Services</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#portfolio" class="page-scroll">Portfolio</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#blog" class="page-scroll">Blog</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#testimonials" class="page-scroll">Testimonials</a></li>
+                        <li><a href="https://elmanawy.info/demo/moraco/layout1/#contact" class="page-scroll">Contact</a></li>
+                    </ul>      
+                    <div class="copyright">
+                        <p>
+                            © Moraco ALL RIGHTS RESERVED 
+                            BY <a href="http://elmanawy.info/">MARWA EL-MANAWY</a>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- END LEFT SIDE -->
+
+                <!-- START CONTENT  -->
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main scroll-page">
+
+                    <!-- START HOME SECTION-->
+                    <section id="home" class="home" style="background: url(&#39;assets/images/bg.jpg&#39;);">
+                        <div class="home-overlay"></div>
+                        <div class="home-content" id="scroll-down">
+                            <div class="home-intro">
+                                <h2>Hello I'm</h2>
+                                <h1>Marwa El-Manawy</h1>
+                                <div class="type-wrap">
+                                    <div id="typed-strings" style="display: none;">
+                                        <span>UX / UI Designer</span>
+                                        <span>Frontend / Backend  Developer</span>
+                                        <span>Mobile  Developer</span>
+                                    </div>
+                                    <span id="typed" style="white-space:pre;">Mobile  Developer</span><span class="typed-cursor">|</span>
+                                </div>
+                                <a download="dummy-resume.txt" class="download-link hvr-shutter-out-horizontal" onclick="Materialize.toast(&#39;Resume Download Successfully&#39;, 4000, &#39;rounded&#39;)" data-position="left" data-delay="50" href="https://elmanawy.info/demo/moraco/layout1/dummy-resume.txt">Download My CV <i class="fa fa-download"></i></a>
+                            </div>
+                            <a class="scroll-down page-scroll" title="Scroll Down" href="https://elmanawy.info/demo/moraco/layout1/#about"><i class="fa fa-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </section>
+                    <!-- START HOME SECTION-->
+
+
+                    <!-- START ABOUT SECTION-->
+                    <section id="about" class="section wow fadeInUpBig animated" style="visibility: visible; animation-name: fadeInUpBig;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>About Me</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-3 profile-pic">
+                                    <a class="profile-img" href="https://elmanawy.info/demo/moraco/layout1/index.html"><img src="./MORACO - Personal Vcard Resume HTML Template_files/pp.jpg" alt="image"></a>
+                                    <h3 class="info-position">UX / UI Developer</h3>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="about-info row">
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-user" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span>Name</span>
+                                                Marwa El-Manawy
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span>Email</span>
+                                                marwa@elmanawy.info
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span>Phone</span>
+                                                01234567890
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span>Date Of Birthday</span>
+                                                23 September 1991
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                                            <div class="info-text">
+                                                <span>Address</span>
+                                                Alexandria, Egypt
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-flag" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span>Nationality</span>
+                                                Egyption
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 social-profiles">
+                                            <span>Social Profiles </span>
+                                            <a class="hvr-pulse-grow facebook" href="https://elmanawy.info/demo/moraco/layout1/#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow twitter" href="https://elmanawy.info/demo/moraco/layout1/#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow linkedin" href="https://elmanawy.info/demo/moraco/layout1/#" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow behance" href="https://elmanawy.info/demo/moraco/layout1/#" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow pinterest" href="https://elmanawy.info/demo/moraco/layout1/#" title="Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow vimeo" href="https://elmanawy.info/demo/moraco/layout1/#" title="Viemo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow rss" href="https://elmanawy.info/demo/moraco/layout1/#" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow google" href="https://elmanawy.info/demo/moraco/layout1/#" title="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow snapchat" href="https://elmanawy.info/demo/moraco/layout1/#" title="Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                                        </div>
+
+                                        <div class="col-sm-12 about-content">
+                                            <p>
+                                                I have more than <b>10 years of experience</b> in the field of <b>Graphic Design</b> , <b>Web Design</b>, <b>Web Development</b> and <b>Mobile Application</b>. Specialized in Adobe web &amp; graphic designing tools and also in others tools. Professional in Corporate branding, Graphic designing, Web Designing, visualization, GUI, graphics &amp; animations for e-learning, illustrations, web icons, flash web banner, flash intro animations, logos, brochures, posters etc.
+                                            </p>
+                                            <p>
+                                                <b> My objectives</b> are increasing my knowledge in computer science fields and new technologies especially, web development and web Design field. Always looking forward to learn new technologies and be a part of a huge change in the world.
+                                            </p>
+                                            <p class="twke3">
+                                                <span>Yours sincerely,</span>
+                                                <img src="./MORACO - Personal Vcard Resume HTML Template_files/twke3.png" style="max-width:266px;" class="img-responsive" alt="Image">
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- END ABOUT SECTION-->
+
+
+                    <!-- START SKILLS SECTION-->
+                    <section id="skills" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Skills</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 skill">
+                                    <h2>marketable skills</h2>
+
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-desktop" aria-hidden="true"></i> Web Technology </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>75%</span></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-mobile" aria-hidden="true"></i> Mobile Application </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>75%</span></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-camera" aria-hidden="true"></i> Photography </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="80%" style="width: 80%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>80%</span> </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-server" aria-hidden="true"></i> Server Administration </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="97%" style="width: 97%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>97%</span> </div>
+                                    </div>  
+                                </div>
+
+                                <div class="col-sm-6 skill">
+                                    <h2>TRANSFERABLE SKILLS</h2>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-comments" aria-hidden="true"></i> Communication </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>75%</span></div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-users" aria-hidden="true"></i> Team Work</div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="80%" style="width: 80%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>80%</span> </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-trophy" aria-hidden="true"></i> LeaderShip </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="97%" style="width: 97%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>97%</span> </div>
+                                    </div>  
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-clock-o" aria-hidden="true"></i> Time Management </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="70%" style="width: 70%; visibility: hidden; animation-duration: 1.5s; animation-delay: 1.2s; animation-name: none;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>70%</span> </div>
+                                    </div>
+
+                                </div> 
+                            </div>
+
+                            <div class="skill-language">
+                                <h2>LANGUAGE SKILLS &amp; KNOWLEDGE</h2>
+                                <div class="langugae-skills row">
+                                    <div class="col-md-3 wow fadeInUp language-skill" style="visibility: hidden; animation-name: none;">
+                                        <div class="c100 p90">
+                                            <span>92%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">English</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill" style="visibility: hidden; animation-name: none;">
+                                        <div class="c100 p85">
+                                            <span>80%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">French</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill" style="visibility: hidden; animation-name: none;">
+                                        <div class="c100 p80">
+                                            <span>72%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">Turkish</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill" style="visibility: hidden; animation-name: none;">
+                                        <div class="c100 p65">
+                                            <span>60%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">Arabic</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END SKILLS SECTION-->
+
+
+                    <!-- START RESUMES SECTION-->
+                    <section id="resumes" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Resumes</h4>
+                            </div>
+                            <div class="resume-section education">
+                                <div class="timeline-container">
+                                    <div class="timeline-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn">
+                                            <i>2016</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft">
+                                            <h2>Google Inc.</h2>
+                                            <p>Intern ( July 2016 - Present)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-block wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="100">
+                                            <i>2014</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInRight" data-anim-delay="100">
+                                            <h2>Apple Inc.</h2>
+                                            <p>Front End Developer ( Jan 2014 - Dec 2015 )</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2013</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Facebook co.</h2>
+                                            <p>Manager Web Development ( Jan 2013 - Dec 2013 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2012</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>DDB Worldwide</h2>
+                                            <p>Intern ( July 2012 - Dec 2013 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2010</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Maronia Software</h2>
+                                            <p>Intern ( July 2009 - Dec 2010 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2009</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Marosoft Co.</h2>
+                                            <p>Intern ( July 2008 - Dec 2009 )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END RESUMES SECTION-->
+
+                    <!-- START SERVICES SECTION-->
+                    <section id="services" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-code"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Web Development</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End first service -->
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-paint-brush"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Designing</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 2nd service -->
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-briefcase"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Marketing</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 3rd service -->
+                            </div><!--/ service box row end -->
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-mobile"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Mobile Development</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End first service -->
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-server"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Server Service</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 2nd service -->
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100" style="visibility: hidden; animation-name: none;">
+                                    <div class="service-box">
+                                        <a href="https://elmanawy.info/demo/moraco/layout1/#"><span class="service-icon pull-left"><i class="fa fa-camera-retro"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Photography</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies vestibulum Graphic river molestie.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 3rd service -->
+                            </div><!--/ service box row end -->
+                        </div>
+                    </section>
+                    <!-- END RESUMES SECTION-->
+
+
+                    <!-- START PORTFOLIO SECTION-->
+                    <section id="portfolio" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Portfolio</h4>
+                            </div>
+                            <div class="toolbar mb2 mt2">
+                                <button class="btn fil-cat" data-rel="all">All</button>
+                                <button class="btn fil-cat" data-rel="web">Websites</button>
+                                <button class="btn fil-cat" data-rel="flyers">Flyers</button>
+                                <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
+                            </div> 
+
+                            <div style="clear:both;"></div>   
+                            <div id="portfolio-page">
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/1.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/2.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/3.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/4.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm flyers all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/5.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/6.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm flyers all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/7.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm flyers all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/8.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/9.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm flyers all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/10.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/11.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/12.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/13.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/14.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/15.jpg" alt="image"></a>
+                                </div> 
+                                <div class="tile scale-anm web all">
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/16.jpg" alt="image"></a>
+                                </div> 
+                                <div class="tile scale-anm bcards all">     
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/17.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">     
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/18.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">     
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/19.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">     
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/20.jpg" alt="image"></a>
+                                </div>
+                                <div class="tile scale-anm bcards all">     
+                                    <a href="https://elmanawy.info/demo/moraco/layout1/single-portfolio.html"> <img src="./MORACO - Personal Vcard Resume HTML Template_files/21.jpg" alt="image"></a>
+                                </div>
+
+                            </div>
+
+                            <div style="clear:both;"></div> 
+                        </div>
+                    </section>
+                    <!-- END PORTFOLIO SECTION-->
+
+
+                    <!-- START BLOG SECTION-->
+                    <section id="blog" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Latest From Blog </h4>
+                                <p class="desc-title">All Articles <a href="https://elmanawy.info/demo/moraco/layout1/blog.html">Here</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="latest-blog">
+                                    <!-- single-latest-blog start -->
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="home-post">
+                                            <div class="post-img">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/single-post.html"><img src="./MORACO - Personal Vcard Resume HTML Template_files/1.jpeg" alt="image"></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <a class="post-title" href="https://elmanawy.info/demo/moraco/layout1/single-post.html">Blog image post layout</a>
+                                                <p>
+                                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent                                        <br>
+                                                </p>
+                                            </div>
+                                            <div class="post-footer single-post">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-user" aria-hidden="true"></i> Marwa</a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-tags" aria-hidden="true"></i> Web Deign </a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-latest-blog end -->
+                                    <!-- single-latest-blog start -->
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="home-post">
+                                            <div class="post-img">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/single-post.html"><img src="./MORACO - Personal Vcard Resume HTML Template_files/2(1).jpg" alt="image"></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <a class="post-title" href="https://elmanawy.info/demo/moraco/layout1/single-post.html">Blog image post layout</a>
+                                                <p>
+                                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent                                        <br>
+                                                </p>
+                                            </div>
+                                            <div class="post-footer single-post">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-user" aria-hidden="true"></i> Marwa</a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-tags" aria-hidden="true"></i> Web Deign </a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-latest-blog end -->
+                                    <!-- single-latest-blog start -->
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="home-post">
+                                            <div class="post-img">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/single-post.html"><img src="./MORACO - Personal Vcard Resume HTML Template_files/3(1).jpg" alt="image"></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <a class="post-title" href="https://elmanawy.info/demo/moraco/layout1/single-post.html">Blog image post layout</a>
+                                                <p>
+                                                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent                                        <br>
+                                                </p>
+                                            </div>
+                                            <div class="post-footer single-post">
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-user" aria-hidden="true"></i> Marwa</a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-tags" aria-hidden="true"></i> Web Deign </a>
+                                                <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-latest-blog end -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END BLOG SECTION-->
+
+
+                    <!-- START Testimonials SECTION-->
+                    <section id="testimonials" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Testimonials </h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/1.png" alt="someone">
+                                        <h4>Johne Smith</h4>
+                                        <h5>CEO / Google Inc.</h5>
+                                        <p>Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, others may experience gambling as an addictive.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/2.png" alt="someone">
+                                        <h4>Salrah Albert</h4>
+                                        <h5>CEO / Maronia Inc.</h5>
+                                        <p>Sports betting While most people enjoy casino gambling, lottery and bingo playing for the fun and excitement it provides, others may experience gambling as an addictive.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/3.png" alt="someone">
+                                        <h4>Weil Smith</h4>
+                                        <h5>CEO / Moraco Inc.</h5>
+                                        <p>She is a great and hardworking guy. I am so proud of i have him as my assistant. He helped me so much. Also i am so proud of i have him as my assistant, she helped me so much.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/4.png" alt="someone">
+                                        <h4>Weil Smith</h4>
+                                        <h5>CEO / Moraco Inc.</h5>
+                                        <p>Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, others may experience gambling as an addictive.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/5.png" alt="someone">
+                                        <h4>Melody Jones</h4>
+                                        <h5>CEO / Freeancer</h5>
+                                        <p>Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, others may experience gambling as an addictive.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                                    <div class="testo">
+                                        <img src="./MORACO - Personal Vcard Resume HTML Template_files/2.png" alt="someone">
+                                        <h4>Mark Zukerberg</h4>
+                                        <h5>CEO / Facebook Inc.</h5>
+                                        <p>Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, others may experience gambling as an addictive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END Testimonials SECTION-->
+
+                    <!-- START CONTACT SECTION-->
+                    <section id="contact" class="section wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Contact Me </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map" id="map" style="pointer-events: none; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -50, -93);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -50, -93);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;"></div></div></div><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="./MORACO - Personal Vcard Resume HTML Template_files/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -50, -93);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(6)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(7)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(8)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(9)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(10)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(11)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(12)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(13)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./MORACO - Personal Vcard Resume HTML Template_files/vt(14)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; left: -14px; top: -43px; z-index: 0;"><img alt="" src="./MORACO - Personal Vcard Resume HTML Template_files/spotlight-poi2.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" title="" style="cursor: pointer; touch-action: none;"></map></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"><div style="cursor: default; position: absolute; top: 0px; left: 0px; z-index: -160;"><div class="gm-style-iw-a" style="position: absolute; left: 0px; top: 0px;"><div class="gm-style-iw-t" style="right: 0px; bottom: 54px;"><div class="gm-style-iw gm-style-iw-c" style="padding-right: 0px; padding-bottom: 0px; max-width: 654px; max-height: 276px;"><div class="gm-style-iw-d" style="overflow: scroll; max-width: 636px; max-height: 258px;"><div><img src="./MORACO - Personal Vcard Resume HTML Template_files/map.png" alt="image"></div></div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: -6px; right: -6px; width: 30px; height: 30px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 14px; height: 14px; margin: 8px;"></button></div></div></div></div></div></div></div></div><iframe aria-hidden="true" frameborder="0" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="./MORACO - Personal Vcard Resume HTML Template_files/saved_resource.html"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=-37.817283,144.955763&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./MORACO - Personal Vcard Resume HTML Template_files/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 372px; top: 135px;"><div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div><div style="font-size: 13px;">Map data ©2020 Google</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2020 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2020 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@-37.817283,144.955763,15z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="40" style="margin: 10px; user-select: none; position: absolute; bottom: 54px; right: 40px;"><div class="gm-svpc" dir="ltr" title="Drag Pegman onto the map to open Street View" controlwidth="40" controlheight="40" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 50%; top: 50%;"></div><div style="position: absolute; left: 50%; top: 50%;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2238%22%20viewBox%3D%220%200%2023%2038%22%3E%0A%3Cpath%20d%3D%22M16.6%2C38.1h-5.5l-0.2-2.9-0.2%2C2.9h-5.5L5%2C25.3l-0.8%2C2a1.53%2C1.53%2C0%2C0%2C1-1.9.9l-1.2-.4a1.58%2C1.58%2C0%2C0%2C1-1-1.9v-0.1c0.3-.9%2C3.1-11.2%2C3.1-11.2a2.66%2C2.66%2C0%2C0%2C1%2C2.3-2l0.6-.5a6.93%2C6.93%2C0%2C0%2C1%2C4.7-12%2C6.8%2C6.8%2C0%2C0%2C1%2C4.9%2C2%2C7%2C7%2C0%2C0%2C1%2C2%2C4.9%2C6.65%2C6.65%2C0%2C0%2C1-2.2%2C5l0.7%2C0.5a2.78%2C2.78%2C0%2C0%2C1%2C2.4%2C2s2.9%2C11.2%2C2.9%2C11.3a1.53%2C1.53%2C0%2C0%2C1-.9%2C1.9l-1.3.4a1.63%2C1.63%2C0%2C0%2C1-1.9-.9l-0.7-1.8-0.1%2C12.7h0Zm-3.6-2h1.7L14.9%2C20.3l1.9-.3%2C2.4%2C6.3%2C0.3-.1c-0.2-.8-0.8-3.2-2.8-10.9a0.63%2C0.63%2C0%2C0%2C0-.6-0.5h-0.6l-1.1-.9h-1.9l-0.3-2a4.83%2C4.83%2C0%2C0%2C0%2C3.5-4.7A4.78%2C4.78%200%200%2C0%2011%202.3H10.8a4.9%2C4.9%2C0%2C0%2C0-1.4%2C9.6l-0.3%2C2h-1.9l-1%2C.9h-0.6a0.74%2C0.74%2C0%2C0%2C0-.6.5c-2%2C7.5-2.7%2C10-3%2C10.9l0.3%2C0.1%2C2.5-6.3%2C1.9%2C0.3%2C0.2%2C15.8h1.6l0.6-8.4a1.52%2C1.52%2C0%2C0%2C1%2C1.5-1.4%2C1.5%2C1.5%2C0%2C0%2C1%2C1.5%2C1.4l0.9%2C8.4h0Zm-10.9-9.6h0Zm17.5-.1h0Z%22%20style%3D%22fill%3A%23333%3Bopacity%3A0.7%3Bisolation%3Aisolate%22%2F%3E%0A%3Cpath%20d%3D%22M5.9%2C13.6l1.1-.9h7.8l1.2%2C0.9%22%20style%3D%22fill%3A%23ce592c%22%2F%3E%0A%3Cellipse%20cx%3D%2210.9%22%20cy%3D%2213.1%22%20rx%3D%222.7%22%20ry%3D%220.3%22%20style%3D%22fill%3A%23ce592c%3Bopacity%3A0.5%3Bisolation%3Aisolate%22%2F%3E%0A%3Cpath%20d%3D%22M20.6%2C26.1l-2.9-11.3a1.71%2C1.71%2C0%2C0%2C0-1.6-1.2H5.7a1.69%2C1.69%2C0%2C0%2C0-1.5%2C1.3l-3.1%2C11.3a0.61%2C0.61%2C0%2C0%2C0%2C.3.7l1.1%2C0.4a0.61%2C0.61%2C0%2C0%2C0%2C.7-0.3l2.7-6.7%2C0.2%2C16.8h3.6l0.6-9.3a0.47%2C0.47%2C0%2C0%2C1%2C.44-0.5h0.06c0.4%2C0%2C.4.2%2C0.5%2C0.5l0.6%2C9.3h3.6L15.7%2C20.3l2.5%2C6.6a0.52%2C0.52%2C0%2C0%2C0%2C.66.31h0l1.2-.4a0.57%2C0.57%2C0%2C0%2C0%2C.5-0.7h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%2F%3E%0A%3Cpath%20d%3D%22M7%2C13.6l3.9%2C6.7%2C3.9-6.7%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%2F%3E%0A%3Ccircle%20cx%3D%2210.9%22%20cy%3D%227%22%20r%3D%225.9%22%20style%3D%22fill%3A%23fdbf2d%22%2F%3E%0A%3C%2Fsvg%3E%0A" aria-label="Street View Pegman Control" style="height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none;"><img src="data:image/svg+xml,%3Csvg%20width%3D%2224px%22%20height%3D%2238px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2024%2038%22%3E%0A%3Cpath%20d%3D%22M22%2C26.6l-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L6.6%2C21l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Z%22%20style%3D%22fill%3A%23333%3Bfill-opacity%3A0.2%22%2F%3E%22%0A%3C%2Fsvg%3E%0A%0A" aria-label="Pegman is on top of the Map" style="display: none; height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none;"><img src="data:image/svg+xml,%3Csvg%20width%3D%2240px%22%20height%3D%2250px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2040%2050%22%3E%0A%3Cpath%20d%3D%22M34.00%2C-30.40l-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L18.60%2C-36.00l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Zm1.2%2C59.1-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L18.60%2C24.00l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Z%22%20style%3D%22fill%3A%23333%3Bfill-opacity%3A0.2%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M15.40%2C38.80h-4a1.64%2C1.64%2C0%2C0%2C1-1.4-1.1l-3.1-8a0.9%2C0.9%2C0%2C0%2C1-.5.1l-1.4.1a1.62%2C1.62%2C0%2C0%2C1-1.6-1.4l-1.1-13.1%2C1.6-1.3a6.87%2C6.87%2C0%2C0%2C1-3-4.6A7.14%2C7.14%200%200%2C1%202%204a7.6%2C7.6%2C0%2C0%2C1%2C4.7-3.1%2C7.14%2C7.14%2C0%2C0%2C1%2C5.5%2C1.1%2C7.28%2C7.28%2C0%2C0%2C1%2C2.3%2C9.6l2.1-.1%2C0.1%2C1c0%2C0.2.1%2C0.5%2C0.1%2C0.8a2.41%2C2.41%2C0%2C0%2C1%2C1%2C1s1.9%2C3.2%2C2.8%2C4.9c0.7%2C1.2%2C2.1%2C4.2%2C2.8%2C5.9a2.1%2C2.1%2C0%2C0%2C1-.8%2C2.6l-0.6.4a1.63%2C1.63%2C0%2C0%2C1-1.5.2l-0.6-.3a8.93%2C8.93%2C0%2C0%2C0%2C.5%2C1.3%2C7.91%2C7.91%2C0%2C0%2C0%2C1.8%2C2.6l0.6%2C0.3v4.6l-4.5-.1a7.32%2C7.32%2C0%2C0%2C1-2.5-1.5l-0.4%2C3.6h0Zm-10-19.2%2C3.5%2C9.8%2C2.9%2C7.5h1.6V35l-1.9-9.4%2C3.1%2C5.4a8.24%2C8.24%2C0%2C0%2C0%2C3.8%2C3.8h2.1v-1.4a14%2C14%2C0%2C0%2C1-2.2-3.1%2C44.55%2C44.55%2C0%2C0%2C1-2.2-8l-1.3-6.3%2C3.2%2C5.6c0.6%2C1.1%2C2.1%2C3.6%2C2.8%2C4.9l0.6-.4c-0.8-1.6-2.1-4.6-2.8-5.8-0.9-1.7-2.8-4.9-2.8-4.9a0.54%2C0.54%2C0%2C0%2C0-.4-0.3l-0.7-.1-0.1-.7a4.33%2C4.33%2C0%2C0%2C0-.1-0.5l-5.3.3%2C2.2-1.9a4.3%2C4.3%2C0%2C0%2C0%2C.9-1%2C5.17%2C5.17%2C0%2C0%2C0%2C.8-4%2C5.67%2C5.67%2C0%2C0%2C0-2.2-3.4%2C5.09%2C5.09%2C0%2C0%2C0-4-.8%2C5.67%2C5.67%2C0%2C0%2C0-3.4%2C2.2%2C5.17%2C5.17%2C0%2C0%2C0-.8%2C4%2C5.67%2C5.67%2C0%2C0%2C0%2C2.2%2C3.4%2C3.13%2C3.13%2C0%2C0%2C0%2C1%2C.5l1.6%2C0.6-3.2%2C2.6%2C1%2C11.5h0.4l-0.3-8.2h0Z%22%20style%3D%22fill%3A%23333%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M3.35%2C15.90l1.1%2C12.5a0.39%2C0.39%2C0%2C0%2C0%2C.36.42l0.14%2C0%2C1.4-.1a0.66%2C0.66%2C0%2C0%2C0%2C.5-0.4l-0.2-3.8-3.3-8.6h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M5.20%2C28.80l1.1-.1a0.66%2C0.66%2C0%2C0%2C0%2C.5-0.4l-0.2-3.8-1.2-3.1Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M21.40%2C35.70l-3.8-1.2-2.7-7.8L12.00%2C15.5l3.4-2.9c0.2%2C2.4%2C2.2%2C14.1%2C3.7%2C17.1%2C0%2C0%2C1.3%2C2.6%2C2.3%2C3.1v2.9m-8.4-8.1-2-.3%2C2.5%2C10.1%2C0.9%2C0.4v-2.9%22%20style%3D%22fill%3A%23e5892b%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M17.80%2C25.40c-0.4-1.5-.7-3.1-1.1-4.8-0.1-.4-0.1-0.7-0.2-1.1l-1.1-2-1.7-1.6s0.9%2C5%2C2.4%2C7.1a19.12%2C19.12%2C0%2C0%2C0%2C1.7%2C2.4h0Z%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M14.40%2C37.80h-3a0.43%2C0.43%2C0%2C0%2C1-.4-0.4l-3-7.8-1.7-4.8-3-9%2C8.9-.4s2.9%2C11.3%2C4.3%2C14.4c1.9%2C4.1%2C3.1%2C4.7%2C5%2C5.8h-3.2s-4.1-1.2-5.9-7.7a0.59%2C0.59%2C0%2C0%2C0-.6-0.4%2C0.62%2C0.62%2C0%2C0%2C0-.3.7s0.5%2C2.4.9%2C3.6a34.87%2C34.87%2C0%2C0%2C0%2C2%2C6h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M15.40%2C12.70l-3.3%2C2.9-8.9.4%2C3.3-2.7%22%20style%3D%22fill%3A%23ce592b%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M9.10%2C21.10l1.4-6.2-5.9.5%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M12.00%2C13.5a4.75%2C4.75%2C0%2C0%2C1-2.6%2C1.1c-1.5.3-2.9%2C0.2-2.9%2C0s1.1-.6%2C2.7-1%22%20style%3D%22fill%3A%23bb3d19%22%3E%3C%2Fpath%3E%0A%3Ccircle%20cx%3D%227.92%22%20cy%3D%228.19%22%20r%3D%226.3%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fcircle%3E%0A%3Cpath%20d%3D%22M4.70%2C13.60a6.21%2C6.21%2C0%2C0%2C0%2C8.4-1.9v-0.1a8.89%2C8.89%2C0%2C0%2C1-8.4%2C2h0Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M21.20%2C27.20l0.6-.4a1.09%2C1.09%2C0%2C0%2C0%2C.4-1.3c-0.7-1.5-2.1-4.6-2.8-5.8-0.9-1.7-2.8-4.9-2.8-4.9a1.6%2C1.6%2C0%2C0%2C0-2.17-.65l-0.23.15a1.68%2C1.68%2C0%2C0%2C0-.4%2C2.1s2.3%2C3.9%2C3.1%2C5.3c0.6%2C1%2C2.1%2C3.7%2C2.9%2C5.1a0.94%2C0.94%2C0%2C0%2C0%2C1.24.49l0.16-.09h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M19.40%2C19.80c-0.9-1.7-2.8-4.9-2.8-4.9a1.6%2C1.6%2C0%2C0%2C0-2.17-.65l-0.23.15-0.3.3c1.1%2C1.5%2C2.9%2C3.8%2C3.9%2C5.4%2C1.1%2C1.8%2C2.9%2C5%2C3.8%2C6.7l0.1-.1a1.09%2C1.09%2C0%2C0%2C0%2C.4-1.3%2C57.67%2C57.67%2C0%2C0%2C0-2.7-5.6h0Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A" aria-label="Street View Pegman Control" style="display: none; height: 40px; width: 40px; position: absolute; transform: translate(-60%, -45%); pointer-events: none;"></div></div><div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;"><div style="width: 40px; height: 40px;"><button draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees" type="button" class="gm-control-active" style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><button draggable="false" title="Tilt map" aria-label="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"></button></div></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 26px; left: 0px;"></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left; position: relative;"><div role="button" tabindex="0" title="Show street map" aria-label="Show street map" aria-pressed="true" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; height: 40px; display: table-cell; vertical-align: middle; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 0px 17px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 36px; font-weight: 500;">Map</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 40px; text-align: left; display: none;"><div draggable="false" title="Show street map with terrain" style="color: black; font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="vertical-align: middle;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2zm-9%2014l-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208l-9%209z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 1em; width: 1em; transform: translateY(0.15em); display: none;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%205v14H5V5h14m0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 1em; width: 1em; transform: translateY(0.15em);"></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left; position: relative;"><div role="button" tabindex="0" title="Show satellite imagery" aria-label="Show satellite imagery" aria-pressed="false" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; height: 40px; display: table-cell; vertical-align: middle; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 0px 17px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 66px; border-left: 0px;">Satellite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 40px; text-align: left; display: none;"><div draggable="false" title="Show imagery with street names" style="color: black; font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span role="checkbox" style="vertical-align: middle;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2zm-9%2014l-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208l-9%209z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 1em; width: 1em; transform: translateY(0.15em);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%205v14H5V5h14m0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 1em; width: 1em; transform: translateY(0.15em); display: none;"></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h2>Contact Address</h2>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p><b>Address: </b> 635 Elraml, South Corner Street, Alexandria, Egypt. </p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <p><b>Phone: </b> +20 012 345 6789</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        <p><b>Whatsapp: </b> +20 012 859 7859</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-skype" aria-hidden="true"></i>
+                                        <p><b>Skype: </b> e.example</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        <p><b>Email: </b> <a href="mailto:someone@website.com">someone@website.com</a></p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                        <p><b>Website </b> <a href="https://elmanawy.info/demo/moraco/layout1/#">www.website.com</a></p>
+                                    </div>
+
+                                    <div class="contact-block wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+                                        <div class="social-profiles">
+                                            <a class="hvr-pulse-grow facebook" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow twitter" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow linkedin" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow behance" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow pinterest" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow vimeo" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow rss" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow google" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow snapchat" href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h2>LET’S HAVE A FUN</h2>
+                                    <div id="show_contact_msg"></div>
+                                    <form method="post" id="contact_form" action="https://elmanawy.info/demo/moraco/layout1/contact.php">
+                                        <input type="text" name="name" id="contact_name" placeholder="Your Name" class="wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                                        <input type="text" name="email" id="contact_email" placeholder="Email" class="wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                                        <input type="text" name="phone" id="contact_phone" placeholder="Phone" class="wow fadeInRight" style="visibility: hidden; animation-name: none;">
+                                        <textarea name="message" id="contact_text" placeholder="Your Message" class="wow fadeInRight" style="visibility: hidden; animation-name: none;"></textarea>
+                                        <button class="btn btn-primary wow fadeInRight" type="submit" value="Send Now" style="visibility: hidden; animation-name: none;">Send Now</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END CONTACT SECTION-->
+                </div>
+                <!-- END CONTENT  -->
+            </div>
+        </div>
+        <a href="https://elmanawy.info/demo/moraco/layout1/#" class="goto-top" style="display: none;"><span class="fa fa-arrow-up"></span></a>
+        <!-- Javascript Files
+            ================================================== -->
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/jquery.min.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/bootstrap.min.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/typed.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/owl.carousel.min.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/wow.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/jquery.fancybox.pack.js.download"></script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/jquery.isotope.js.download"></script>  
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/materialize.min.js.download"></script>  
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/js"></script>
+        <script type="text/javascript" src="./MORACO - Personal Vcard Resume HTML Template_files/gmap3.js.download"></script>
+        <script type="text/javascript">
+                                    new WOW().init();
+                                    function initialize() {
+                                        var mapOptions = {
+                                            center: new google.maps.LatLng(-37.817283, 144.955763),
+                                            zoom: 15,
+                                            zoomControl: false,
+                                            scaleControl: false,
+                                            scrollwheel: false,
+                                            disableDoubleClickZoom: true,
+                                        };
+
+                                        var map = new google.maps.Map(document.getElementById('map'),
+                                                mapOptions);
+
+                                        var marker = new google.maps.Marker({
+                                            map: map,
+                                            position: map.getCenter()
+                                        });
+                                        var infowindow = new google.maps.InfoWindow();
+                                        infowindow.setContent('<img src="assets/images/map.png" alt="image" />');
+                                        google.maps.event.addListener(marker, 'load', function () {
+                                            infowindow.open(map, marker);
+                                        });
+                                        infowindow.open(map, marker);
+                                    }
+
+                                    google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/script.js.download"></script> 
+
+        <!-- Style Switcher
+================================================== -->
+        <script src="./MORACO - Personal Vcard Resume HTML Template_files/switcher.js.download"></script>
+
+        <div id="style-switcher">
+            <h2>Color Switcher <a href="https://elmanawy.info/demo/moraco/layout1/#"><i class="fa fa-paint-brush"></i></a></h2>
+
+            <div>
+                <ul class="colors" id="color1">
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="main" title="Main"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="blue" title="Blue"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="orange" title="Orange"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="navy" title="Navy"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="yellow" title="Yellow"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="peach" title="Peach"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="beige" title="Beige"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="purple" title="Purple"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="celadon" title="Celadon"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="red" title="Red"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="brown" title="Brown"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="cherry" title="Cherry"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="cyan" title="Cyan"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="gray" title="Gray"></a></li>
+                    <li><a href="https://elmanawy.info/demo/moraco/layout1/#" class="olive" title="Olive"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Style Switcher / End -->
+    
+
+
+
+
+
+<div class="hiddendiv common"></div></body></html>

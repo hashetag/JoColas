@@ -1,0 +1,82 @@
+body{
+    scrollbar-base-color: #fa5b0f;
+    scrollbar-base-color: #fa5b0f;
+}
+.form-control:focus{
+    border-color: #fa5b0f;
+}
+::selection, 
+.btn-primary,
+.hvr-shutter-out-horizontal,
+.profile-pic:hover .profile-img,
+.info-icon,
+.timeline-container .timeline-block .timeline-content h2,
+.contact-block > i,
+.gen,
+.widget-categories ul.category-list li .posts-count,
+.widget-tags li a:hover,
+.carousel-indicators .active,
+.toolbar .btn:focus,
+.toast
+{
+    background-color: #fa5b0f;
+}
+::-webkit-scrollbar-thumb:vertical{
+    background: #fa5b0f;
+}
+a:focus, a:hover,
+input, textarea,
+.btn-primary:hover,
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:focus, .nav-sidebar > .active > a:hover, .nav-sidebar > li > a:hover ,.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus,
+.copyright p a,
+.desc-title a,
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active,
+.profile-pic:hover .info-position,
+.timeline-container .timeline-block .timeline-img i,
+figure.effect-winston a:hover,
+figure.effect-winston a:focus,
+.service-box i,
+.post-footer a:hover,
+.contact-block p a,
+.crumb a.active,
+.blog-sidebar h3.widget-title,
+.post-footer.single-post i,
+.comments-counter a,
+a.goto-top span
+{
+    color: #fa5b0f;
+}
+input:focus, textarea:focus{
+    border-bottom: 1px solid #fa5b0f !important;
+}
+.btn-primary,
+.btn-primary:hover,
+.profile-img,
+.widget-tags li a:hover{
+    border-color: #fa5b0f;
+}
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:focus, .nav-sidebar > .active > a:hover, .nav-sidebar > li > a:hover ,.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus{
+    box-shadow: 15px 0px 0px 0px #fa5b0f inset !important;
+}
+.section-title h4{
+    border: 2px solid #fa5b0f;
+}
+@media(min-width:1170px){
+    .timeline-container .timeline-block .timeline-content:before{
+        border-left-color:#fa5b0f;
+    }
+}
+@media(min-width:1170px){
+    .timeline-container .timeline-block:nth-child(even) .timeline-content::before{
+        border-right-color:#fa5b0f;
+    }
+}
+.bar,.fill {
+  border: 0.08em solid #fa5b0f !important;
+}
+.c100:hover span {
+  color: #fa5b0f !important;
+}
+.langugae-skills:hover .skill-name {
+  color: #fa5b0f !important;
+}
