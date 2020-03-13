@@ -1,35 +1,3 @@
-<?php 
-
-  if (isset($_POST['send'])) {
-    if (empty($_POST['username']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['msg']) ){
-      $error = "campo vacío!";
-    }else{
-      $username = htmlspecialchars(trim(stripcslashes($_POST['username'])));
-      $email    = htmlspecialchars(trim(stripcslashes($_POST['email'])));
-      $subject  = htmlspecialchars(trim(stripcslashes($_POST['subject'])));
-      $msg      = htmlspecialchars(trim(stripcslashes($_POST['msg'])));
-
-      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
-      {
-        $error = 'Formato de email inválido';
-        //var_dump($email); die;
-      }else{
-        $to      = 'info@hashetag.com';
-        //$subject = 'the subject';
-        $message = $msg;
-        $headers = 'From: '.$email. "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-
-        mail($to, $subject, $message, $headers);
-        // Instantiation and passing `true` enables exceptions
-        $mail = new PHPMailer(true);
-       
-      } 
-      //echo '<script> swal("Good job!", "You clicked the button!", "success"); </script>';
-    }
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
