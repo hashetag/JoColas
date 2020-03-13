@@ -1,0 +1,572 @@
+<?php 
+
+  if (isset($_POST['send'])) {
+    if (empty($_POST['username']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['msg']) ){
+      $error = "campo vacío!";
+    }else{
+      $username = htmlspecialchars(trim(stripcslashes($_POST['username'])));
+      $email    = htmlspecialchars(trim(stripcslashes($_POST['email'])));
+      $subject  = htmlspecialchars(trim(stripcslashes($_POST['subject'])));
+      $msg      = htmlspecialchars(trim(stripcslashes($_POST['msg'])));
+
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
+      {
+        $error = 'Formato de email inválido';
+        //var_dump($email); die;
+      }else{
+        $to      = 'info@hashetag.com';
+        //$subject = 'the subject';
+        $message = $msg;
+        $headers = 'From: '.$email. "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+        mail($to, $subject, $message, $headers);
+        // Instantiation and passing `true` enables exceptions
+        $mail = new PHPMailer(true);
+       
+      } 
+      //echo '<script> swal("Good job!", "You clicked the button!", "success"); </script>';
+    }
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="assets/images/favicon.jpg">
+
+        <!-- SEO 
+          ================================================== -->
+        <title>Jo Colas - Personal Resume</title>
+        <meta name="author" content="Jo Colas <jonas.colas@yahoo.com>" />
+        <meta name="description" content="CV, RESUME, projects, business solutions and business consulting services, Hashetag Digital Agency, Weonmart, Ecommerce">
+        <meta name="Keywords" content="Web Design, Web Development,IT infrastructure,business solutions,business consulting services,innovation,servers,storage solutions,software, outsourcing,web design,web development,software development,software company,social media,marketing,automation">
+
+        <!-- CSS Files
+          ================================================== -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/colors/orange.css" id="colors">
+    </head>
+    <body>
+        <div id="loading">
+            <img src="assets/images/loading.gif" alt="loading">
+        </div>
+        <div class="responsive-menu"><a href="index.html"> <b>JoColas</b></a> <a id="menu-icon" class="but" href="#"><span class="ti-menu"><img src="assets/images/menu.png" alt="image"></span> </a></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- START LEFT SIDE -->
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                    <ul class="nav nav-sidebar" id="navbar">
+                        <li class="active"><a href="#home" class="page-scroll">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#about" class="page-scroll">About</a></li>
+                        <li><a href="#skills" class="page-scroll">Skills</a></li>
+                        <li><a href="#resumes" class="page-scroll">Resumes</a></li>
+                        <li><a href="#services" class="page-scroll">Services</a></li>
+                        <!-- <li><a href="#portfolio" class="page-scroll">Portfolio</a></li> -->
+                        <!-- <li><a href="#blog" class="page-scroll">Blog</a></li> -->
+                        <!-- <li><a href="#testimonials" class="page-scroll">Testimonials</a></li> -->
+                        <li><a href="#contact" class="page-scroll">Contact</a></li>
+                    </ul>      
+                    <div class="copyright">
+                        <p>
+                            © Jo Colas ALL RIGHTS RESERVED 
+                            BY <a href="https://hashetag.com/">Hashetag Digital Agency</a>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- END LEFT SIDE -->
+
+                <!-- START CONTENT  -->
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main scroll-page">
+
+                    <!-- START HOME SECTION-->
+                    <section id="home" class="home" style="background: url('assets/images/swdeveloper.jpg');">
+                        <div class="home-overlay"></div>
+                        <div class="home-content" id="scroll-down">
+                            <div class="home-intro">
+                                <h2>Hello I'm</h2>
+                                <h1>Jo Colas</h1>
+                                <div class="type-wrap">
+                                    <div id="typed-strings">
+                                        <span>A DevOps</span>
+                                        <span>A Mobile  Developer</span>
+                                        <span>A Fullstack  Developer</span><!-- Frontend / Backend -->
+                                    </div>
+                                    <span id="typed" style="white-space:pre;"></span>
+                                </div>
+                                <a download="dummy-resume.txt" class="download-link hvr-shutter-out-horizontal" onclick="Materialize.toast('Resume Download Successfully', 4000, 'rounded')" data-position="left" data-delay="50" href="dummy-resume.txt">Download My Resume <i class="fa fa-download"></i></a>
+                            </div>
+                            <a class="scroll-down page-scroll" title="Scroll Down" href="#about"><i class="fa fa-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </section>
+                    <!-- START HOME SECTION-->
+
+                    <!-- START ABOUT SECTION-->
+                    <section id="about" class="section wow fadeInUpBig">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>About Me</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-3 profile-pic">
+                                    <a class="profile-img" href="index.html"><img src="assets/images/superDraw.PNG" alt="image"></a>
+                                    <h3 class="info-position">Software Developer</h3>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="about-info row">
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-user" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span><u>Name</u></span>
+                                                Jonas Colas
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span><u>Email</u></span>
+                                                jonas.colas@yahoo.com,
+                                                info@hashetag.com
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span><u>Phone</u></span>
+                                                +541127040843
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                                            <div class="info-text">
+                                                <span><u>Address</u></span>
+                                                Boulevard Oroño 1500, Rosario
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span><u>State</u></span>
+                                                Santa Fe
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 info-block wow fadeInRight">
+                                            <div class="info-icon hvr-trim"> <i class="fa fa-flag" aria-hidden="true"></i></div>
+                                            <div class="info-text">
+                                                <span><u>Country</u></span>
+                                                Argentina
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 social-profiles">
+                                            <span>Social Profiles </span>
+                                            <a class="hvr-pulse-grow linkedin" href="https://linkedin.com/in/jonas-colas" title="Linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow github" href="https://github.com/jocolas" title="Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow whatsapp" href="https://api.whatsapp.com/send?phone=5491127040843&text=Hi" title="whatsapp" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                        </div>
+
+                                        <div class="col-sm-12 about-content">
+                                            <p>
+                                                I have more than <b>6 years of experience</b> in the field of <b>Web Design</b>, <b>Web App</b>, <b>Mobile App</b>, <b>Software Development</b> and 2 years of experience in <b>DevOps</b> and <b>AI, IoT, ML</b>. Specialized in Backend , DevOps and also in others tools. Professional in Corporate branding, Web Designing, visualization, GUI, graphics etc.
+                                            </p>
+                                            <p>
+                                                <b> My objectives</b> are increasing my knowledge in computer science fields and new technologies especially, web development and Data Science. Always looking forward to learn new technologies and be a part of a huge change in the world.
+                                            </p>
+                                            <p class="twke3">
+                                                <span>Sincerely Yours,</span>
+                                                Jonas Colas
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- END ABOUT SECTION-->
+
+
+                    <!-- START SKILLS SECTION-->
+                    <section id="skills" class="section wow fadeInUp">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Skills</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 skill">
+                                    <h2>marketable skills</h2>
+
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-desktop" aria-hidden="true"></i> Web Technology </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="85%" style="width: 85%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>85%</span></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-mobile" aria-hidden="true"></i> Mobile Application </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="65%" style="width: 65%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>65%</span></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-camera" aria-hidden="true"></i> Data Science </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="40%" style="width: 40%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>40%</span> </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"> <i class="fa fa-server" aria-hidden="true"></i> Server Administration </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="87%" style="width: 87%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>87%</span> </div>
+                                    </div>  
+                                </div>
+
+                                <div class="col-sm-6 skill">
+                                    <h2>TRANSFERABLE SKILLS</h2>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-comments" aria-hidden="true"></i> Communication </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>75%</span></div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-users" aria-hidden="true"></i> Team Work</div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="80%" style="width: 80%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>80%</span> </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-trophy" aria-hidden="true"></i> LeaderShip </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="97%" style="width: 97%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>97%</span> </div>
+                                    </div>  
+                                    <div class="progress">
+                                        <div class="lead"><i class="fa fa-clock-o" aria-hidden="true"></i> Time Management </div>
+                                        <div class="progress-bar wow fadeInLeft" data-progress="70%" style="width: 70%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>70%</span> </div>
+                                    </div>
+
+                                </div> 
+                            </div>
+
+                            <div class="skill-language">
+                                <h2>LANGUAGE SKILLS & KNOWLEDGE</h2>
+                                <div class="langugae-skills row">
+                                    <div class="col-md-3 wow fadeInUp language-skill">
+                                        <div class="c100 p90">
+                                            <span>72%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">English</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill">
+                                        <div class="c100 p85">
+                                            <span>92%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">French</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill">
+                                        <div class="c100 p87">
+                                            <span>87%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">Spanish</span> 
+                                    </div>
+                                    <div class="col-md-3 wow fadeInUp language-skill">
+                                        <div class="c100 p96">
+                                            <span>96%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                        <span class="skill-name">Creole</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END SKILLS SECTION-->
+
+
+                    <!-- START RESUMES SECTION-->
+                    <section id="resumes" class="section wow fadeInUp">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Resumes</h4>
+                            </div>
+                            <div class="resume-section education">
+                                <div class="timeline-container">
+                                    <div class="timeline-block wow fadeInLeft">
+                                        <div class="timeline-img" data-anim-effect="zoomIn">
+                                            <i>2013</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft">
+                                            <h2>Freelancing</h2>
+                                            <p>Front End Development ( July 2013 - Present)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-block wow fadeInRight">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="100">
+                                            <i>2016</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInRight" data-anim-delay="100">
+                                            <h2>Hashetag Digital Agency.</h2>
+                                            <p>Back End Development ( Jan 2016 - Present )</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-block wow fadeInLeft">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2018</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Aenima Agency co.</h2>
+                                            <p>Back End Development ( Jan 2018 - Mars 2019 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInRight">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2019</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Pilot Solution</h2>
+                                            <p>Back End Development ( Mars 2019 - Agust 2019 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInLeft">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2019</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Preminens</h2>
+                                            <p>Fullstack Development ( Agust 2019 - Feb 2020 )</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block wow fadeInLeft">
+                                        <div class="timeline-img" data-anim-effect="zoomIn" data-anim-delay="200">
+                                            <i>2020</i>
+                                        </div>
+
+                                        <div class="timeline-content" data-anim-effect="fadeInLeft" data-anim-delay="200">
+                                            <h2>Hashetag Digital Agency</h2>
+                                            <p>Intern ( Feb 2020 - Present )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END RESUMES SECTION-->
+
+                    <!-- START SERVICES SECTION-->
+                    <section id="services" class="section wow fadeInUp">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-code"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Web Development</h3>
+                                            <p>We deliver  world class , component High-Quality web development Solutions at the low-cost price</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End first service -->
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-shopping-cart"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Ecommerce Development</h3>
+                                            <p>Right mix of web development methodologies along with highly competitive marketing strategies.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 2nd service -->
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-briefcase"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Web Design</h3>
+                                            <p>Our procedures are designed to provide a structured process that is simple, supportive, informative and flexible.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 3rd service -->
+                            </div><!--/ service box row end -->
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-mobile"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Mobile Development</h3>
+                                            <p>Provide sleekly functional, market capturing and comprehensive mobility services and solutions.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End first service -->
+                                <div class="col-md-4 col-sm-4 wow flipInX" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-server"></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>DevOps</h3>
+                                            <p>Hire dedicated resources on full time or hourly basis starting at most competitive price.e.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 2nd service -->
+                                <div class="col-md-4 col-sm-4 wow flipInY" data-delay="100">
+                                    <div class="service-box">
+                                        <a href="#"><span class="service-icon pull-left"><i class="fa fa-microchip "></i></span></a>
+                                        <div class="service-box-content">
+                                            <h3>Artificial Inteligence</h3>
+                                            <p>A practical grounding in artificial intelligence (AI) and its business applications, equipping you with the knowledge and confidence you need to transform your organization into an innovative, efficient, and sustainable company of the future.</p>
+                                        </div>
+                                    </div>
+                                </div><!--/ End 3rd service -->
+                            </div><!--/ service box row end -->
+                        </div>
+                    </section>
+                    <!-- END RESUMES SECTION-->
+
+
+                    <!-- START CONTACT SECTION-->
+                    <section id="contact" class="section wow fadeInUp">
+                        <div class="container-section">
+                            <div class="section-title">
+                                <h4>Hire Me </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map" id="map" style=" pointer-events: none;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h2>Contact Address</h2>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p><b>Address: </b> Blvd Oroño 1500, Rosario, Santa fe, Argentina. </p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <p><b>Phone: </b> +54 9 1127040843</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        <p><b>Whatsapp: </b> +54 9 1127040843</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-skype" aria-hidden="true"></i>
+                                        <p><b>Skype: </b> jonas.colas</p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        <p><b>Email: </b> <a href="mailto:info@hashetag.com">info@hashetag.com</a></p>
+                                        <p><b>Email: </b> <a href="mailto:jonas.colas@yahoo.com">jonas.colas@yahoo.com</a></p>
+                                    </div>
+                                    <div class="contact-block wow fadeInLeft">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                        <p><b>Website </b> <a href="https://hashetag.com">www.hashetag.com</a></p>
+                                    </div>
+
+                                    <div class="contact-block wow fadeInLeft">
+                                        <div class="social-profiles">
+                                            <a class="hvr-pulse-grow linkedin" href="https://linkedin.com/in/jonas-colas"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <a class="hvr-pulse-grow github" href="https://github.com/jocolas"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h2>LET’S HAVE A FUN</h2>
+                                    <div id="show_contact_msg"></div>
+                                    <form method="post" id="contact_form" action="index.php">
+                                        <input type="text" name="username" id="contact_name" placeholder="Your Name" class="wow fadeInRight">
+                                        <input type="username" name="email" id="contact_email" placeholder="Email" class="wow fadeInRight">
+                                        <input type="text" name="phone" id="contact_phone" placeholder="Phone" class="wow fadeInRight">
+                                        <textarea name="msg" id="contact_text" placeholder="Your Message" class="wow fadeInRight"></textarea>
+                                        <button class="btn btn-primary wow fadeInRight" name="send" type="submit" value="Send Now">Send Now</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END CONTACT SECTION-->
+                </div>
+                <!-- END CONTENT  -->
+            </div>
+        </div>
+        <a href="#" class="goto-top"><span class="fa fa-arrow-up"></span></a>
+        <!-- Javascript Files
+            ================================================== -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="assets/js/jquery.isotope.js"></script>  
+        <script src="assets/js/materialize.min.js"></script>  
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkdsK7PWcojsO-o_q2tmFOLBfPGL8k8Vg"></script>
+        <script type="text/javascript" src="assets/js/gmap3.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+            function initialize() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(-32.9530403, -60.6575524),
+                    zoom: 15,
+                    zoomControl: false,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    disableDoubleClickZoom: true,
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'),
+                        mapOptions);
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: map.getCenter()
+                });
+                var infowindow = new google.maps.InfoWindow();
+                infowindow.setContent('<img src="assets/images/logo.png" alt="image" />');
+                google.maps.event.addListener(marker, 'load', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <script src="assets/js/script.js"></script> 
+    </body>
+</html>
+
+
+
+
